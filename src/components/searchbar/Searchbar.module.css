@@ -12,8 +12,8 @@
 .Searchbar {
 /*    background-color:rgba(3, 3, 170, 0.349); */
 /*     font-weight: bold; */
-/*     font-size: medium; */
-    padding: 08px;
+    font-size: medium;
+    padding: 10px;
     display: flex;
     justify-content: center;
     font-family: rick_and_morty;
@@ -27,7 +27,7 @@ input {
 }
   
 button:hover {
-/*     color: aqua; */
+    color: aqua;
     background-color: #282c3486;
     cursor: pointer;
   }

@@ -1,6 +1,7 @@
 import style from "../card/Card.module.css";
 
 export default function Card(props) {
+   console.log(props.onClose)
    return (
       <div className={style.card}>
          <button onClick={props.onClose} className={`${style.boton}`}>X</button>
