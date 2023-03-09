@@ -6,7 +6,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color:rgba(0, 255, 234, 0.315);
+    background-color:rgba(1, 68, 68, 0.750);
 /*     border:outset #00ffb3; */
     font-family: rick_and_morty;
     width: 220px;
@@ -22,7 +22,7 @@
 
 .card h2 {
     color:navy;
-    margin: 0px 10px 0px 0px;
+    margin: 0px -5px 0px 0px;
 }
 
 .boton{

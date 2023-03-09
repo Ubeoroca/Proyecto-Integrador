@@ -1,16 +1,18 @@
 import './App.css'
-/* import Card from './components/card/Card.jsx' */
+import Card from './components/card/Card.jsx'
 import Cards from './components/cards/Cards.jsx'
-/* import SearchBar from './components/searchbar/SearchBar.jsx' */
-/* import characters, { Rick } from './data.js' */
-import characters from './data.js'
-import Nav from './components/nav/Nav'
+import SearchBar from './components/searchbar/SearchBar.jsx'
+import characters, { Rick } from './data.js'
 
 function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
-      <Nav/>
-{/*       <hr />      
+      <div>
+        <SearchBar
+          onSearch={(characterID) => window.alert(characterID)}
+        />
+      </div>
+      <hr />      
       <div 
         style={{
           display: "flex",
@@ -25,12 +27,14 @@ function App () {
           onClose={() => window.alert('Emulamos que se cierra la card')}
         />
       </div>
-      <hr /> */}
+      <hr />
       <div>
         <Cards
           characters={characters}
         />
       </div>
+      <hr />
+
     </div>
   )
 }

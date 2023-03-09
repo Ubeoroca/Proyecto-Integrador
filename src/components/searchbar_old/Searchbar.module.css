@@ -27,7 +27,7 @@ input {
 }
   
 button:hover {
-/*     color: aqua; */
+    color: aqua;
     background-color: #282c3486;
     cursor: pointer;
   }
