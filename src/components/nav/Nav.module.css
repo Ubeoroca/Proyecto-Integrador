@@ -1,10 +1,12 @@
 .container {
-    background-color: rgba(50, 50, 61, 0.555);
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: space-evenly;
     display: flex;
-    border-radius: 15px;
-    margin-bottom: 15px;
+    border-radius: 7px;
+    margin: 0px 0px 30px 0px;
     align-items: center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 .links{
@@ -15,6 +17,7 @@
     border: none;
     border-radius: 5px;
     margin-bottom: 5px;
+    text-decoration:none;
 }
 
 .links:hover{

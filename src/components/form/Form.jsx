@@ -20,7 +20,7 @@ export default function Form(props){
 
     return <div className={style.form}>
     <form onSubmit={handleSubmit}><br/>
-        <div className={style.texto}>
+        <div>
             <label htmlFor="username">Username: </label>
             <input
                 id="username"
@@ -34,7 +34,7 @@ export default function Form(props){
 
         <p className={style.danger}>{errors.username}</p><br/>
 
-        <div className={style.texto}>
+        <div>
             <label>Password: </label>
             <input
                 id="password"

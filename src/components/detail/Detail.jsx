@@ -29,14 +29,14 @@ export default function Detail(){
 
     return (
         <div className={style.divPrincipal}>
-          <div><button onClick={()=>navigate(-1)}>Regresar</button></div>
-            <div className={style.info}>
-            <h2 className={style.texto}>Name : {character.name}</h2>
-            <h2 className={style.texto}>Status : {character.status}</h2>
-            <h2 className={style.texto}>Specie : {character.species}</h2>
-            <h2 className={style.texto}>Gender : {character.gender}</h2>
-            <h2 className={style.texto}>Location : {character.location?.name}</h2>
-            <h2 className={style.texto}>Origin : {character.origin?.name}</h2>
+          <div><button onClick={()=>navigate(-1)} className={style.bton}>Regresar</button></div>
+            <div className={style.texto}>
+            <h2>Name : {character.name}</h2>
+            <h2>Status : {character.status}</h2>
+            <h2>Specie : {character.species}</h2>
+            <h2>Gender : {character.gender}</h2>
+            <h2>Location : {character.location?.name}</h2>
+            <h2>Origin : {character.origin?.name}</h2>
             </div>
             <img className={style.image} src={character.image} alt=""/>
         </div>

@@ -7,6 +7,7 @@ export default function SearchBar(props) {
       const {value} = event.target
       setCharacter(value)
    }
+
    return (
       <div className={styled.Searchbar}>
       <input 

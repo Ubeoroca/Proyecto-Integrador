@@ -12,6 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: medium;
+    padding: 10px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 .form input {
@@ -21,9 +25,10 @@
 }
 
 .form button {
-    padding: 0.5em 1em;
-    border: none;
-    background: rgba(255, 255, 255, 0.856);
-    cursor: pointer;
-    margin-bottom: 20px;
+    font-size:large;
+    padding: 10px;
+    border-radius: 7px 7px 7px 7px;
+    border-color: aqua;
+    background-color: rgba(0, 255, 234, 0.6);
+    outline: none;
 }

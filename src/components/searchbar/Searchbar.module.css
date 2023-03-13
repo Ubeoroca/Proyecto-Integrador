@@ -1,7 +1,7 @@
 .SearchButton {
     padding: 10px;
     font-family: rick_and_morty;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 7px 7px 0;
     border-color: aqua;
     background-color: rgba(0, 255, 234, 0.6);
     cursor: pointer;
@@ -9,17 +9,22 @@
 
 .Searchbar {
     font-size: medium;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     font-family: rick_and_morty;
-    border-radius: 10px 0 0 10px;
+    border-radius: 7px 0 0 7px;
     border-color:  rgba(0, 255, 255, 0.329);
     outline: none;
+    width:200px;
  }
  
 input {
-    background-color: rgba(0, 255, 255, 0.329);
+    background-color: rgba(0, 255, 255, 0.24);
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 2px;
 }
   
 button:hover {
