@@ -6,23 +6,23 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color:rgba(1, 68, 68, 0.750);
+    background-color:rgba(2, 99, 99, 0.75);
 /*     border:outset #00ffb3; */
     font-family: rick_and_morty;
-    width: 220px;
-    height: 290px;
+    width: 240px;
+    height: 300px;
     border-radius: 15px;
     transition: all 0.8s ease;
     box-shadow: 10px 10px 20px rgba(1, 68, 68, 0.6);
 }
 
 .card:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
   }
 
 .card h2 {
     color:navy;
-    margin: 0px -5px 0px 0px;
+    margin: 0px 5px 5px 0px;
 }
 
 .boton{
@@ -30,7 +30,6 @@
     border-color: red;
     border-radius: 07px;
     color: azure;
-
     margin: 5px;
     cursor: pointer;
     align-self: flex-end; 
@@ -51,21 +50,24 @@
 }
 
 .img {
-    width: 220px;
+    width: 240px;
     height: 220px;
-/*     border-radius: 20px 20px 0 0; */
   }
 
 .name {
-    position: absolute;
-    /* margin-bottom: 0px; */
+    margin: 5px 0px 0px 20px;
+    align-self: flex;
+    justify-content: space-evenly;
   }
 
   .propsContainer {
     display: flex;
     justify-content: space-evenly;
-/*    background-color: rgba(0, 255, 234, 0.6);
-    margin: 2px;
-    color: aqua;
-    border-radius: 0 0 20px 20px; */
+    background-color:rgba(3, 141, 141, 0.75);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .link{
+    text-decoration: none;
+    color: inherit;
   }

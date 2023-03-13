@@ -1,9 +1,24 @@
 .container {
     background-color: rgba(50, 50, 61, 0.555);
-    justify-content: flex-end;
+    justify-content: space-evenly;
     display: flex;
-    padding:  10px;
     border-radius: 15px;
     margin-bottom: 15px;
+    align-items: center;
+}
 
+.links{
+    font-family: rick_and_morty;
+    font-size:xx-large;
+    color: azure;
+    background-color: rgba(50, 50, 61, 0);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.links:hover{
+    color: aqua;
+    background-color: #282c3486;
+    cursor: pointer;
 }

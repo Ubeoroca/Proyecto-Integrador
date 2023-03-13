@@ -1,0 +1,28 @@
+.texto {
+    color: rgb(3, 255, 3);
+}
+
+.texto2 {
+    color: rgb(3, 255, 242);
+    text-align: right;
+}
+
+.info {
+    text-align: left;
+    font-size: small;
+}
+
+.image {
+    border-radius: 10px;
+    width: 240px;
+    height: 280px;
+}
+
+.divPrincipal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    align-items: center;
+}

@@ -1,0 +1,29 @@
+.danger {
+    color: red;
+    font-weight: bold;
+  }
+
+.form {
+    background-color: rgba(177, 177, 177, 0.527);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width:auto;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgba(255, 255, 255, 0.856);
+    cursor: pointer;
+    margin-bottom: 20px;
+}

@@ -1,6 +1,4 @@
 .SearchButton {
-/*     margin-right: auto; */
-/*     border-radius: 5px; */
     padding: 10px;
     font-family: rick_and_morty;
     border-radius: 0 10px 10px 0;
@@ -10,8 +8,6 @@
  }
 
 .Searchbar {
-/*    background-color:rgba(3, 3, 170, 0.349); */
-/*     font-weight: bold; */
     font-size: medium;
     padding: 10px;
     display: flex;

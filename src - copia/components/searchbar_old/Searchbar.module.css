@@ -1,0 +1,33 @@
+.SearchButton {
+/*     margin-right: auto; */
+/*     border-radius: 5px; */
+    padding: 10px;
+    font-family: rick_and_morty;
+    border-radius: 0 10px 10px 0;
+    border-color: aqua;
+    background-color: rgba(0, 255, 234, 0.6);
+    cursor: pointer;
+ }
+
+.Searchbar {
+/*    background-color:rgba(3, 3, 170, 0.349); */
+/*     font-weight: bold; */
+/*     font-size: medium; */
+    padding: 08px;
+    display: flex;
+    justify-content: center;
+    font-family: rick_and_morty;
+    border-radius: 10px 0 0 10px;
+    border-color:  rgba(0, 255, 255, 0.329);
+    outline: none;
+ }
+ 
+input {
+    background-color: rgba(0, 255, 255, 0.329);
+}
+  
+button:hover {
+    color: aqua;
+    background-color: #282c3486;
+    cursor: pointer;
+  }
