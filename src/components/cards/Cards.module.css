@@ -1,7 +1,7 @@
 .tarjeta {
-/*     justify-content:flex-start;
-    align-items: center; */
+    justify-content:flex-start;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 8%;
   }

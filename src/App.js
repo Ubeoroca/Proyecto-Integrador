@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import './App.css'
 import Cards from './components/cards/Cards.jsx'
 import Nav from './components/nav/Nav'
@@ -42,6 +42,7 @@ function logout () {
 
 useEffect(() => {
   !access && navigate('/');
+  // eslint-disable-next-line
 }, [access]);
 
   return (

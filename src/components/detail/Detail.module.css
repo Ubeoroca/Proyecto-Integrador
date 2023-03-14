@@ -1,5 +1,5 @@
 .texto {
-    color: rgba(0, 255, 234, 0.767);
+    color: rgb(0, 255, 76);
     font-family: rick_and_morty;
     font-size:larger;
     text-align: left;
@@ -12,7 +12,7 @@
 }
 
 .divPrincipal {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-evenly;
     border-radius: 7px;
