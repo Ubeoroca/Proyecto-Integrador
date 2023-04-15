@@ -1,0 +1,66 @@
+@font-face {
+  font-family: rick_and_morty;
+  src: url(../../../assets/MISFITS_.TTF);
+}
+
+.card {
+  background-color:rgba(2, 99, 99, 0.75);
+  font-family: rick_and_morty;
+  width: 260px;
+  height: 335px;
+  border-radius: 15px;
+  transition: all 0.1s ease;
+  box-shadow: 10px 10px 20px rgba(1, 68, 68, 0.7);
+}
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+.card h2 {
+  color:navy;
+  margin: 0px 5px 5px 10px;
+  text-align: center;  
+}
+
+.boton{
+  background-color: red;
+  border-color: red;
+  border-radius: 07px;
+  color: azure;
+  cursor: pointer;
+  float: right;
+  margin: 0px 6px 0px 0px;
+}
+
+.botonFav{
+  background-color: rgba(255, 0, 0, 0);
+  border-color: rgba(255, 0, 0, 0);
+  border-radius: 07px;
+  cursor: pointer;
+  float: right;
+  margin: 0px 2px 0px 0px;
+}
+
+.card button:hover {
+  background-color: white;
+  border-color: white;
+  border-radius: 07px;
+  color:darkred;
+}
+
+.img {
+  width: 240px;
+  height: 220px;
+}
+
+.nam {
+  color: rgb(0, 255, 76);
+  font-size: large;
+  margin: 5px 0px 5px 10px;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
