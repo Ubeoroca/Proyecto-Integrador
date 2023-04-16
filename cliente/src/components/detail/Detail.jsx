@@ -14,9 +14,9 @@ export default function Detail(){
             setCharacter({
               name: char.type,
               status: char.status,
-              specie: char.specie,
+              species: char.species,
               gender: char.gender,
-              origina: char.origin.name,
+              origin: char.origin.name,
               image: char.image,
               location: char.location.name,
           });

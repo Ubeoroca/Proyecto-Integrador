@@ -12,11 +12,19 @@ function App () {
   const location = useLocation()
   const [characters, setCharacters] = useState([])
   const onSearch = (id)=> {
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    fetch(`http://localhost:3001/rickandmorty/character/${id}`)
     .then((response) => response.json())
     .then((data) => {
-      (data.name ? characters.filter((char) => char.id === data.id).length === 0 : "")
-      ? setCharacters([...characters, data]): alert('Ya esiste el Personaje')
+      const { id } = data;
+      const char = characters.find((char) => char.id === id);
+      if (id) {
+        if (char) return alert("Personaje ya existe");
+        setCharacters([...characters, data]);
+      } else {
+        alert(data.error);
+      }
+/*       (data.name ? characters.filter((char) => char.id === data.id).length === 0 : alert(data.error))
+      ? setCharacters([...characters, data]): alert('Ya esiste el Personaje') */
     })
     .catch((error) => console.log(error));
   }
