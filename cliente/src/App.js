@@ -7,6 +7,7 @@ import Detail from './components/detail/Detail'
 import Form from './components/form/Form'
 import Favorites from './components/favorites/Favorites'
 import {Routes, Route, useLocation, useNavigate} from 'react-router-dom'
+import axios from "axios";
 
 function App () {
   const location = useLocation()
@@ -35,14 +36,28 @@ function onClose(id) {
 
 const navigate = useNavigate();
 const [access, setAccess] = useState(false);
-const username = 'ejemplo@gmail.com';
+
+/* const username = 'ejemplo@gmail.com';
 const password = '1password';
+const login = (userData) => {
+  if(userData.username === username && userData.password === password) {
+      setAccess(true);
+      navigate("/home")
+    }else{
+      alert("Datos incorrectos, por favor verifique")
+    }
+  setAccess(true);
+  navigate("/home");
+}; */
 
 function login(userData) {
-   if (userData.password === password && userData.username === username) {
-      setAccess(true);
-      navigate('/home');
-   }
+  const { username, password } = userData;
+  const URL = "http://localhost:3001/rickandmorty/login/";
+  axios(`${URL}?email=${username}&password=${password}`).then(({ data }) => {
+    const { access } = data;
+    setAccess(data);
+    access && navigate("/home");
+  });
 }
 
 function logout () {

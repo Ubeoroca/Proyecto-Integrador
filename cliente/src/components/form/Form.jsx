@@ -3,9 +3,7 @@ import style from "../form/Form.module.css"
 import { validation } from "./validation";
 
 export default function Form(props){
-    
-    const [userData, setUserData] = useState({ username: '', password: '' });
-
+    const [userData, setUserData] = useState({username: '', password: '' });
     const [errors, setErrors] = useState ({ username: '', password: '' });
 
     function handleInputChange(e) {
@@ -23,7 +21,6 @@ export default function Form(props){
         <div>
             <label htmlFor="username">Username: </label>
             <input
-                id="username"
                 name="username"
                 placeholder=" Ingrese el Usuario"
                 type='text'
@@ -31,13 +28,12 @@ export default function Form(props){
                 onChange={handleInputChange}
             />                
         </div>
-
-        <p className={style.danger}>{errors.username}</p><br/>
+        
+        {errors.username ? (<p className={style.danger}>{errors.username}</p>) : null}<br/>
 
         <div>
             <label>Password: </label>
             <input
-                id="password"
                 name="password"
                 placeholder=" Ingrese el password"
                 type='password'
@@ -45,8 +41,8 @@ export default function Form(props){
                 onChange={handleInputChange}
             />     
         </div>
-        <p className={style.danger}>{errors.password}</p><br/>
-        <button>LOGIN</button>
+        {errors.password ? (<p className={style.danger}>{errors.password}</p>) : null}<br/>
+        <button type="submit">Login</button>
     </form>
     </div>
 }
